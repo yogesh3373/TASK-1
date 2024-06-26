@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>York Admission</title>
+  </head>
+  <body
+    style="
+      background-image: url(https://storage.googleapis.com/nyc-en/2020/05/02328b9a-york-college.jpg);
+      background-repeat: no-repeat;
+    "
+  >
+    <div>
+      <style>
+        #button {
+          color: #ffffff;
+          background-color: #00ccff;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 5px;
+
+          width: 50%;
+        }
+      </style>
+      <div>
+        <h3
+          style="
+            background-color: aqua;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 50%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 5px;
+            border-radius: 6px;
+          "
+        >
+          York Admission
+        </h3>
+      </div>
+      <form>
+        <div>
+          <table
+            style="
+              margin-left: auto;
+              margin-right: auto;
+              padding: 1px;
+              background-color: #ffffff;
+            "
+            border="2px"
+            width="50%"
+          >
+            <tr>
+              <td label for="stu">Student Name</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter the Student Name"
+                  id="stu"
+                  style="width: 98%"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td lable for="phn">Phone Number</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter the Phone Number"
+                  id="phn"
+                  style="width: 98%"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td label for="Adid">Admission Id</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter the Student Name"
+                  id="Adid"
+                  style="width: 98%"
+                  ;
+                />
+              </td>
+            </tr>
+            <tr>
+              <td label for="date">Date of Admission</td>
+              <td>
+                <input type="date" name="date" id="date" style="width: 98%" />
+              </td>
+            </tr>
+            <tr>
+              <td label for="dtp">Department Name</td>
+              <td>
+                <select name="Department" id="dtp" style="width: 98%">
+                  <option value="" disabled selected>
+                    Select Your Department
+                  </option>
+                  <option value="CST">CST</option>
+                  <option value="CSD">CSD</option>
+                  <option value="CSE">CSE</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Prefer College Name</td>
+              <td>
+                <input type="radio" name="YesorNo" value="Yes" checked /> Yes
+                <input type="radio" name="YesorNo" value="No" /> No
+              </td>
+            </tr>
+            <tr>
+              <td>First Graduate</td>
+              <td input type="checkbox" name="first" id="first" value="Yes">
+                Yes,I am First Graduate
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+      <div style="margin-top: 15px; text-align: center" id="button">
+        <input type="Submit" value="Confirm Admission" onclick="hello()" />
+      </div>
+
+      <div style="text-align: center"  ;>
+        <pre id="result"
+          style="color: #0c6;background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;width: 50%;
+        font-size: 20px;"
+        
+          hi da
+      </pre>
+      </div>
+    </div>
+    <script>
+      var res = document.getElementById("result");
+      function hello() {
+        res.textContent =
+          "HI SAM" +
+          "\n" +
+          "Your Admission Fee is Rs.30000" +
+          "\n" +
+          "Tution Fees is Rs.55000" +
+          "\n" +
+          "Hostel Fees is Rs.75000" +
+          "\n" +
+          "Total college Fees is Rs.140000";
+      }
+    </script>
+  </body>
+</html>
